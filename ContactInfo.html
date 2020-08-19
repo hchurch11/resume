@@ -40,8 +40,9 @@
             padding: left;
         }
 
-        table {
+        form {
             text-align: center;
+            display: block;
             margin: 0 auto;
 
         }
@@ -51,7 +52,7 @@
 <body>
     <div title="contactInfo">
         <h1>
-            Contact Information
+            My Contact Information
         </h1>
         <ul>
             <li>
@@ -67,44 +68,41 @@
             </li>
         </ul>
     </div>
-    <div title="references">
+    <div title="contactForm">
         <h1>
-            References
+            Submit Your Contact Information
         </h1>
-        <table>
-            <caption><strong>Tech Experience References</caption>
-            <tr>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Phone</th>
-                <th>Company</th>
-                <th>Title</th>
-            </tr>
-            <tr>
-                <td>Tanner Gruebele</td>
-                <td>tannergruebele@gmail.com</td>
-                <td>701-640-4666</td>
-                <td></td>
-                <td>Software Engineer</td>
-            </tr>
-        </table>
-        <table>
-            <caption>Music/Other Work Experience References</caption>
-            <tr>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Phone</th>
-                <th>Company</th>
-                <th>Title</th>
-            </tr>
-            <tr>
-                <td>Denisse Vallecillos</td>
-                <td>rdvallecillos@gmail.com</td>
-                <td>408.254.5904</td>
-                <td>Juan Diego Catholic High School</td>
-                <td>Orchestra Teacher</td>
-            </tr>
-        </table>
+        <form action="heatherlchurch@gmail.com" method="POST" class="contactInfo">
+            <div class="inputFields">
+                <label for="fullName">Name: </label><br />
+                <input type="text" name="fullName" id="fullName" required />
+            </div>
+            <div class="inputFields">
+                <label for="emailAddress">Email: </label><br />
+                <input type="email" name="emailAddress" id="emailAddress" required />
+            </div>
+            <div class="inputFields">
+                <label for="phone">Phone: </label><br />
+                <input type="text" name="phone" id="phone" required />
+            </div>
+            <div class="inputFields">
+                <label for="company">Company: </label><br />
+                <input type="text" name="company" id="company" required />
+            </div>
+            <div class="inputFields">
+                <label for="url">Website: </label><br />
+                <input type="text" name="url" id="url" />
+            </div>
+            <div class="inputFields">
+                <label for="comments"> Brief Message: </label><br />
+                <textarea name="comments" id="comments" rows="5" cols="33">
+
+                </textarea>
+            </div>
+            <div class="inputFields">
+                <input type="submit" value="submit" />
+            </div>
+        </form>
     </div>
 </body>
 
