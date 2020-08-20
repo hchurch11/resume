@@ -7,6 +7,7 @@
     <title>Contact Info</title>
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/resume/CSS/secondarypages.css">
+
 </head>
 
 <body>
@@ -63,6 +64,41 @@
                 <input type="submit" value="submit" />
             </div>
         </form>
+        <script language="vbscript" type="text/vbscript">
+                     Sub Sample ()  
+                      Dim iRow  
+                      Set objExcel = CreateObject ("Excel. Application")  
+                      Set objWorkbook = objExcel.Workbooks.Open ("/resume/MyWebsiteContactInfo.numbers")  
+                      objExcel.Application.Visible = True  
+                      ObjWorkbook.Windows (1).Visible = True  
+                      Set XlSheet =objWorkbook.Sheets (1)  
+                      XlSheet.Activate  
+                      iRow = 1  
+                      With objExcel  
+                          Do while .Cells (iRow, 1).value <> ""  
+                              .Cells (iRow, 1).activate  
+                              iRow = iRow + 1  
+                          Loop  
+                             .Cells (iRow, 1).value=Document.GetElementsByName ("fullName") (0).Value  
+                             .Cells (iRow, 2).value=Document.GetElementsByName ("emailAddress") (0).Value  
+                             .Cells (iRow, 3).value=Document.GetElementsByName ("phone") (0).Value  
+                             .Cells (iRow, 4).value=Document.GetElementsByName ("company") (0).Value  
+                             .Cells (iRow, 5).value=Document.GetElementsByName ("url") (0).Value  
+                             .Cells (iRow, 6).value=Document.GetElementsByName ("comments") (0).Value  
+                             MsgBox "Data Added Successfully”, vbinformation  
+                             Document.GetElementsByName ("fullName") (0).Value=""  
+                             Document.GetElementsByName ("emailAddress") (0).Value=""  
+                             Document.GetElementsByName ("phone") (0).Value=""  
+                             Document.GetElementsByName ("company") (0).Value=""  
+                             Document.GetElementsByName ("url") (0).Value="" 
+                             Document.GetElementsByName ("comments") (0).Value="" 
+                         End With  
+                         ObjWorkbook. Save  
+                         ObjWorkbook. Close  
+                         Set objWorkbook = Nothing  
+                         Set objExcel = Nothing  
+                     End Sub  
+                  </script>
     </div>
 </body>
 
