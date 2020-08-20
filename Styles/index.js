@@ -1,11 +1,11 @@
 function hireMe() {
-  let name = prompt("What is your name?");
+  let name = prompt("What is your full name?");
   let job = prompt("Are you hiring currently?");
 
   if (job === "no") {
     alert("Thank you " + name + ", please contact me when you have openings!");
   } else if (job === "yes") {
-    let email = prompt("contactInfo.html");
+    let email = prompt("What is your email?");
     alert(
       "Thank you " +
         name +
