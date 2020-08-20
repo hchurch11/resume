@@ -7,12 +7,11 @@
     <title>Online Resume</title>
     <link rel="stylesheet" type="text/css" href="/resume/CSS/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
-
+    <link rel="javascript" type="javascript" href="/resume/Styles/index.js">
 </head>
 
 <body>
     <div class="container">
-
         <div class="mainHeader">
             <h1>
                 Music Geek ➡️ Tech Nerd
@@ -82,46 +81,13 @@
                 </span>
             </p>
         </div>
-        <section>
-            <h1> Enjoy These Videos</h1>
-
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/AnQxAe2JFl8" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
-                type="video/mp4"></iframe>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/zLmQmYrhITg" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
-                type="video/mp4"></iframe>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/8_kX5lQXUx4" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
-                type="video/mp4"></iframe>
-
-
-        </section>
-        <hr />
         <footer>
-            This page was built by Heather Church
+            This page was built by <strong>Heather Church</strong>
             <br />
             Copyright 2020
         </footer>
 
     </div>
-
-    <script>
-        function hireMe() {
-            let name = prompt("What is your full name?");
-            let job = prompt("Are you hiring currently?");
-
-            if (job === "no") {
-                alert("Thank you " + name + ", please contact me when you have openings!");
-            } else if (job === "yes") {
-                let email = prompt("What is your email?");
-                alert("Thank you " + name + ", I will contact you at " + email + " within a few days!");
-            }
-        }
-        let hireButton = document.querySelector("button");
-        hireButton.addEventListener("click", hireMe);
-
-    </script>
 </body>
 
 </html>
