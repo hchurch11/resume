@@ -1,0 +1,147 @@
+body {
+    background: linear-gradient(#abedd86d, #ffffff);
+    font-family: 'Shadows Into Light', cursive;
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 1000;
+    color: 006064;
+}
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 300;
+    color: #0097a7;
+    border: 1px solid #111111;
+    padding: 40px 20px;
+    border-radius: 6px;
+}
+
+ul {
+    text-align: center;
+    line-height: 80px;
+    text-decoration: none;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 25px;
+    list-style: none;
+    padding: 10px;
+    align-content: space-around;
+    color: #371C1C;
+}
+
+li {
+    display: inline-block;
+    padding: 20px;
+}
+
+#socialMedia a {
+    text-decoration: none;
+    color: #48466D;
+}
+
+#socialMedia a:hover {
+    color: salmon;
+}
+
+#education a {
+    text-decoration: none;
+    color: #48466D;
+}
+
+#education a:hover {
+    color: salmon;
+}
+
+#experience a {
+    text-decoration: none;
+    color: #3D84A8;
+}
+
+#experience a:hover {
+    color: salmon;
+}
+
+#contactInfo a {
+    text-decoration: none;
+    color: #212121;
+}
+
+#contactInfo a:hover {
+    color: salmon;
+}
+
+img {
+    display: inline-block;
+    margin: 40px auto;
+    border-radius: 30%;
+    box-shadow: 5px 5px 10px #212121;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+p {
+    margin: 0 auto;
+    align-content: center;
+    max-width: 400px;
+    text-align: center;
+    font-size: 25px;
+    color: #0097a7;
+    border: 1px solid #111111;
+    padding: 40px 20px;
+    transform: translateX(200px) translateY(-800px);
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    background: #ffffff;
+    color: salmon;
+    font-family: "Shadows Into Light", cursive;
+    font-size: 18px;
+    padding: 15px 60px;
+    border-radius: 6px;
+    box-shadow: 5px 5px 10px #212121;
+    transition: all 250ms ease-in-out;
+}
+
+button:hover {
+    opacity: 0.9;
+    cursor: pointer;
+    padding: 15px 60px;
+    background-color: #48466D;
+    color: white;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 15px 30px;
+}
+
+#resume {
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    color: #48466D;
+    padding: 20px 0px;
+    font-size: 20px;
+}
+
+#resume a:hover {
+    color: salmon;
+}
+
+iframe {
+    display: block;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+footer {
+    text-align: center;
+    margin: 0 auto;
+}
