@@ -87,8 +87,46 @@
             <br />
             Copyright 2020
         </footer>
-
     </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyAV7vm845tppXe8CGpyXUAJHnQcF56QneY",
+            authDomain: "website-resume-f2723.firebaseapp.com",
+            databaseURL: "https://website-resume-f2723.firebaseio.com",
+            projectId: "website-resume-f2723",
+            storageBucket: "website-resume-f2723.appspot.com",
+            messagingSenderId: "675547061311",
+            appId: "1:675547061311:web:0a8d406d07502035416c8a",
+            measurementId: "G-BWMG7K4GFF"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+    <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="/__/firebase/7.19.0/firebase-app.js"></script>
+
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+    <script src="/__/firebase/7.19.0/firebase-analytics.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="/__/firebase/7.19.0/firebase-auth.js"></script>
+    <script src="/__/firebase/7.19.0/firebase-firestore.js"></script>
+
+    <!-- Previously loaded Firebase SDKs -->
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
 </body>
 
 </html>
