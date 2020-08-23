@@ -39,6 +39,11 @@
      margin: 10px 100px;
  }
 
+ ul.myContactInfo {
+     margin: 0 auto;
+     padding: 5px;
+ }
+
  p {
      padding: 0 40px;
      font-size: 14px;
@@ -86,6 +91,10 @@
 
  a:hover {
      color: salmon;
+ }
+
+ #submit {
+     margin: 5px 0px
  }
 
  iframe {
