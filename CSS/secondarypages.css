@@ -31,7 +31,7 @@
      list-style-type: none;
      font-size: 22px;
      text-align: center;
-     padding: 30px 40px;
+     padding: 0px 40px;
  }
 
  ul {
@@ -49,6 +49,10 @@
      font-size: 14px;
  }
 
+ strong {
+     font-weight: bold;
+ }
+
  form {
      text-align: center;
      display: block;
@@ -62,7 +66,7 @@
  label {
      display: inline-block;
      width: 90px;
-     text-align: left;
+     text-align: right;
  }
 
  input, textarea {
@@ -94,7 +98,8 @@
  }
 
  #submit {
-     margin: 5px 0px
+     margin: 5px 0px;
+     width: auto;
  }
 
  iframe {
