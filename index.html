@@ -5,84 +5,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Resume</title>
-    <link rel="stylesheet" type="text/css" href="/resume/CSS/index.css">
+    <link rel="stylesheet" type="text/css" href="./CSS/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
-    <link rel="javascript" type="javascript" href="/resume/Styles/index.js">
 </head>
 
 <body>
     <div class="container">
         <div class="mainHeader">
-            <h1>
-                Music Geek ➡️ Tech Nerd
-            </h1>
             <h2>
                 <strong>CREATIVE, </strong>
                 <sup> Analytical, </sup>
                 <sub>Organized, </sub>
                 <em>Passionate </em>
             </h2>
-            <button>
-                Hire Me
-            </button>
         </div>
         <div class="resumeSections">
             <nav>
                 <ul>
 
                     <li id="education">
-                        <a href="/resume/Secondary-Pages/Education.html" target="_blank">
+                        <a class="infoLinks" href="./Secondary-Pages/Education.html" target="_blank">
                             Education </a>
                     </li>
                     <li id="experience">
-                        <a href="/resume/Secondary-Pages/WorkExperience.html" target="_blank"> Work
+                        <a class="infoLinks" href="./Secondary-Pages/WorkExperience.html" target="_blank"> Work
                             Experience</a>
                     </li>
                     <li id="contactInfo">
-                        <a href="/resume/Secondary-Pages/ContactInfo.html" target="_blank">
+                        <a class="infoLinks" href="./Secondary-Pages/ContactInfo.html" target="_blank">
                             Contact Information</a>
                     </li>
                     <li id="socialMedia">
-                        <a href="/resume/Secondary-Pages/SocialMedia.html" target="_blank">
+                        <a class="infoLinks" href="./Secondary-Pages/SocialMedia.html" target="_blank">
                             Social Media
                         </a>
                     </li>
 
                 </ul>
             </nav>
-        </div>
-        <div class="centerImages">
-            <div class="headShot">
-                <img src="/resume/images/IMG_0912.JPG">
-            </div>
-            <div class="coderImage">
-                <img src="/resume/images/IMG_3085.jpg">
+            <div class="gridTitle">
+                <h1>
+                    Music Geek turned Tech Nerd
+                </h1>
             </div>
         </div>
-
+        <div>
+            <div class="grid">
+                <img src="./images/IMG_0912.JPG" class="headShot">
+                <img src="./images/direction+retro+right+stroke+arrow+icon-1320185744769287290.png" class="arrow">
+                <img src="./images/IMG_3085.jpg" class="headShot">
+            </div>
+        </div>
         <div class="aboutMe">
-            <p><span>
-                    <strong>About My Career Shift</strong> <br />
-                    The pandemic has left me without a job in the arts. Over the past few years, I have entertained the
-                    idea
-                    of
-                    getting into the tech industry. With my music program being cut, and the prospects of
-                    playing
-                    live music soon are low, so I've decided to go forward with a career in tech. I hope to use the
-                    skills I
-                    have
-                    learned as a musician and teacher in my new career. I believe my creative and analytical brain will
-                    allow me
-                    success
-                    in any tech job I should get!
-                    <br />
-                    <a href="/resume/pdfs/Heather-Church-RESUME-2020.pdf" id="resume" type="application/pdf"
-                        download="Heather-Church-RESUME">
-                        👉🏼 Download my
-                        resume </a><br />
-                </span>
+
+            <strong>
+                <h3>About My Career Shift</h3>
+            </strong>
+            <p>
+                I am a trained orchestral percussionist and teacher, and the Covid-19 pandemic has left me without a
+                job. Over the past few years, I have
+                entertained
+                the
+                idea of getting into the tech industry. With my music program being cut, and the prospects
+                of
+                playing live music soon are low, I've decided to go forward with a career in tech. I hope
+                to
+                use
+                the skills I have learned as a musician and teacher in my new career. I believe my creative
+                and
+                analytical brain, ability to learn concepts quickly, and my hard work ethic will allow me success as
+                a Full-Stack engineer!
+                <br />
+                <a href="./pdfs/Heather-Church-RESUME-2020.pdf" id="resume" type="application/pdf"
+                    download="Heather-Church-RESUME">
+                    👉🏼 Download my
+                    resume </a><br />
             </p>
         </div>
+
         <hr />
         <footer>
             This page was built by <strong>Heather Church</strong>
@@ -90,45 +90,8 @@
             Copyright 2020
         </footer>
     </div>
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
 
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-         https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-analytics.js"></script>
-
-    <script>
-        // Your web app's Firebase configuration
-        var firebaseConfig = {
-            apiKey: "AIzaSyAV7vm845tppXe8CGpyXUAJHnQcF56QneY",
-            authDomain: "website-resume-f2723.firebaseapp.com",
-            databaseURL: "https://website-resume-f2723.firebaseio.com",
-            projectId: "website-resume-f2723",
-            storageBucket: "website-resume-f2723.appspot.com",
-            messagingSenderId: "675547061311",
-            appId: "1:675547061311:web:0a8d406d07502035416c8a",
-            measurementId: "G-BWMG7K4GFF"
-        };
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-        firebase.analytics();
-    </script>
-    <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
-
-    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
-    <script src="/__/firebase/7.19.0/firebase-app.js"></script>
-
-    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
-    <script src="/__/firebase/7.19.0/firebase-analytics.js"></script>
-
-    <!-- Add Firebase products that you want to use -->
-    <script src="/__/firebase/7.19.0/firebase-auth.js"></script>
-    <script src="/__/firebase/7.19.0/firebase-firestore.js"></script>
-
-    <!-- Previously loaded Firebase SDKs -->
-
-    <!-- Initialize Firebase -->
-    <script src="/__/firebase/init.js"></script>
+    </div>
 </body>
 
 </html>

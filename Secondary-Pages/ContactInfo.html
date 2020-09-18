@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Info</title>
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="/resume/CSS/secondarypages.css">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../CSS/secondarypages.css">
 </head>
 
 <body>
@@ -16,25 +16,26 @@
             Contact Information
         </h1>
         <h2>How To Reach Me</h2>
-        <ul class="myContactInfo">
-            <li>
-                <strong>Phone: </strong> 701-899-2512 <br />
-            </li>
-            <br />
-            <li>
-                <strong>Email: </strong>heatherlchurch11@gmail.com
-            </li>
-            <br />
-            <li>
-                <strong>Address: </strong>Millcreek, Utah 84106
-            </li>
+        <ul>
+            <div class="myContactInfo">
+                <li>
+                    <strong>Phone: </strong> 701-899-2512 <br />
+                </li>
+                <li>
+                    <strong>Email: </strong>heatherlchurch11@gmail.com
+                </li>
+                <li>
+                    <strong>Address: </strong>Millcreek, Utah 84106
+                </li>
+            </div>
         </ul>
     </div>
     <div title="contactForm">
         <h2>
             Submit Your Contact Information Below
         </h2>
-        <form action="MAILTO:heatherlchurch11@gmail.com" method="POST" type="text/plain" class="contactInfo">
+
+        <form id=myform class="contactInfo">
             <div class="inputFields">
                 <label for="fullName">Name: </label>
                 <input type="text" name="fullName" id="fullName" required />
@@ -58,8 +59,7 @@
             <br />
             <div class="inputFields">
                 <label for="comments"> Brief Message: </label>
-                <textarea name="comments" id="comments" rows="5" cols="33">
-                </textarea>
+                <textarea name="comments" id="comments" rows="5" cols="33"></textarea>
             </div>
             <div class="inputFields">
                 <input type="submit" value="submit" id="submit" />
@@ -72,6 +72,34 @@
         <br />
         Copyright 2020
     </footer>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+             https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyAV7vm845tppXe8CGpyXUAJHnQcF56QneY",
+            authDomain: "website-resume-f2723.firebaseapp.com",
+            databaseURL: "https://website-resume-f2723.firebaseio.com",
+            projectId: "website-resume-f2723",
+            storageBucket: "website-resume-f2723.appspot.com",
+            messagingSenderId: "675547061311",
+            appId: "1:675547061311:web:0a8d406d07502035416c8a",
+            measurementId: "G-BWMG7K4GFF"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+
+        const db = firebase.firestore();
+    </script>
+
+    <script src="../Styles/secondarypages.js"></script>
 </body>
 
 </html>

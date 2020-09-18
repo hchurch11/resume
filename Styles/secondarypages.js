@@ -1,28 +1,28 @@
-const functions = require("firebase-functions");
-const admin = require("firebase-admin");
-admin.initializeApp();
-exports.addMessage = functions.https.onRequest(async (req, res) => {
-  const original = req.query.text;
-  const writeResult = await admin
-    .firestore()
-    .collection("message")
-    .add({ original: original });
-  res.json({ result: "Message with ID: ${writeResult.id} added." });
+$("#myform").submit(function (event) {
+  const data = $(this).serializeArray();
+  event.preventDefault();
+
+  const formattedData = data.reduce((acc, { name, value }) => {
+    acc[name] = value.trim();
+
+    return acc;
+  }, {});
+
+  db.collection("leads")
+    .doc()
+    .set(formattedData)
+    .then(function () {
+      console.log("Document successfully written!");
+      alert(
+        "Thank you " +
+          formattedData.fullName +
+          ", I will contact you at " +
+          formattedData.emailAddress +
+          " within a few days!"
+      );
+      window.location.reload();
+    })
+    .catch(function (error) {
+      console.error("Error, try again.  ", error);
+    });
 });
-exports.makeUppercase = functions.firestore
-  .document("/messages/{documentId}")
-  .onCreate((snap, context) => {
-    const original = snap.data().original;
-    functions.logger.log("Uppercasing", context.params.documentId, original);
-    const uppercase = original.toUpperCase();
-    return snap.ref.set({ uppercase }, { merge: true });
-  });
-
-FileInputStream refreshToken = new FileInputStream("path/to/refreshToken.json");
-
-FirebaseOptions options = FirebaseOptions.builder()
-    .setCredentials(GoogleCredentials.getApplicationDefault())
-    .setDatabaseUrl("https://<DATABASE_NAME>.firebaseio.com/")
-    .build();
-
-FirebaseApp.initializeApp(options);
