@@ -6,23 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Resume</title>
     <link rel="stylesheet" type="text/css" href="./CSS/index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
         <div class="mainHeader">
-            <h2>
+            <h1 class="attributes" id="attributes">
                 <strong>CREATIVE, </strong>
                 <sup> Analytical, </sup>
                 <sub>Organized, </sub>
                 <em>Passionate </em>
-            </h2>
-        </div>
-        <div class="resumeSections">
-            <nav>
+            </h1>
+            <nav class="secondaryPageLinks">
                 <ul>
-
                     <li id="education">
                         <a class="infoLinks" href="./Secondary-Pages/Education.html" target="_blank">
                             Education </a>
@@ -40,29 +40,36 @@
                             Social Media
                         </a>
                     </li>
-
                 </ul>
             </nav>
-            <div class="gridTitle">
-                <h1>
-                    Music Geek turned Tech Nerd
-                </h1>
+        </div>
+
+        <div class="gridTitle">
+            <h2>
+                Music Geek turned Tech Nerd
+            </h2>
+            <div class="row">
+                <div class="col-3 col-sm">
+                    <img src="./images/IMG_0912.JPG" id="perc-headshot">
+                </div>
+
+                <div class="col-3 col-sm rotating">
+                    <img src="./images/direction+retro+right+stroke+arrow+icon-1320185744769287290.png" id="arrow">
+                </div>
+
+                <div class="col-3 col-sm">
+                    <img src="./images/IMG_3085.jpg" id="code-headshot">
+                </div>
             </div>
         </div>
-
-        <div class="grid">
-            <img src="./images/IMG_0912.JPG" class="headShot">
-            <img src="./images/direction+retro+right+stroke+arrow+icon-1320185744769287290.png" class="arrow">
-            <img src="./images/IMG_3085.jpg" class="headShot">
-        </div>
-
+        <hr />
         <div class="aboutMe">
-
             <strong>
-                <h3>About My Career Shift</h3>
+                <h2>About My Career Shift</h2>
             </strong>
             <p>
-                I am a trained orchestral percussionist and teacher, and the Covid-19 pandemic has left me without a
+                I am a trained orchestral percussionist and teacher, and the Covid-19 pandemic has left me
+                without a
                 job. Over the past few years, I have
                 entertained
                 the
@@ -73,28 +80,37 @@
                 use
                 the skills I have learned as a musician and teacher in my new career. I believe my creative
                 and
-                analytical brain, ability to learn concepts quickly, and my hard work ethic will allow me success as
+                analytical brain, ability to learn concepts quickly, and my hard work ethic will allow me
+                success as
                 a Front End Devoloper!
                 <br />
-            <p>I have been coding since July 2020. I have been teaching myself a lot of material using free, credible
-                sources. In addition, I have also (and am currently taking) taken online course to obtain certificates
-                in front end development. To learn more about my work history, education, and what I like to do for fun,
+            <p>I have been coding since July 2020. I have been teaching myself a lot of material using free,
+                credible
+                sources. In addition, I have also (and am currently taking) taken online course to obtain
+                certificates
+                in front end development. To learn more about my work history, education, and what I like to do
+                for
+                fun,
                 click any of the links at the top of the page! </p>
-            <a href="./pdfs/Heather-Church-RESUME-2020.pdf" id="resume" type="application/pdf"
+            <!--  <a href="./pdfs/Heather-Church-RESUME-2020.pdf" id="resume" type="application/pdf"
                 download="Heather-Church-RESUME">
                 👉🏼 Download my
-                resume </a><br />
+                resume </a><br /> -->
+        </div>
+        <div class="coverLetter">
+            <strong>
+                <h2>General Cover Letter</h2>
+            </strong>
+            <p>coming soon!
             </p>
         </div>
-
         <hr />
         <footer>
             This page was built by <strong>Heather Church</strong>
             <br />
-            Copyright 2020
+            Copyright 2020 |
+            updated: October 17, 2020
         </footer>
-    </div>
-
     </div>
 </body>
 
