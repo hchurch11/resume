@@ -5,7 +5,7 @@ body {
 
 .container {
     margin: 0 auto;
-    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Raleway', sans-serif;
 }
 
 .mainHeader {
@@ -18,6 +18,7 @@ h1 {
     text-align: left;
     color: salmon;
     font-stretch: expanded;
+    font-family: 'Shadows Into Light', cursive;
 }
 
 h2 {
@@ -53,6 +54,7 @@ ul li {
     top: 10px;
     left: 10px;
     width: 40px;
+    font-family: 'Shadows Into Light', cursive;
 }
 
 a.btn {
@@ -63,6 +65,7 @@ footer {
     text-align: center;
     margin: 0 auto;
     padding: 20px;
+    color: #303030;
 }
 
 /* specific to Education.html */
@@ -142,8 +145,12 @@ img.techIcon {
 
 /* specific to SocialMedia.html */
 
+div ul {
+    padding: 0px;
+}
+
 .socialMedia {
-    text-align: center;
+    text-align: left;
     font-size: 24px;
 }
 
@@ -155,6 +162,8 @@ iframe {
     height: 315px;
 }
 
+p.videoNote {}
+
 a.mySMRef {
     text-decoration: none;
     color: #48466D
@@ -162,6 +171,15 @@ a.mySMRef {
 
 a.mySMRef:hover {
     color: salmon;
+}
+
+li p.linkDescription {
+    text-indent: 30px;
+    text-align: justify;
+}
+
+div.musicVideos {
+    padding: 0px 20px;
 }
 
 /* specific to ContactInfo.html */
@@ -176,6 +194,7 @@ form {
     text-align: left;
     display: block;
     margin: 0 auto;
+    max-width: 400px;
     width: 100%;
     padding: 20px;
     border: 1px solid #111111;
