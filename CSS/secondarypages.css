@@ -96,22 +96,14 @@ small {
     line-height: 1.5;
 }
 
-.col-2 {
-    /*   flex: 0 0 25%; */
+.col {
     max-width: 100%;
-}
-
-.block {
-    display: block;
 }
 
 .img-fluid {
-    max-width: 100%;
+    max-width: 100px;
     height: auto;
-}
-
-.rounded {
-    border-radius: .25rem;
+    border-radius: 10px;
 }
 
 .center {
